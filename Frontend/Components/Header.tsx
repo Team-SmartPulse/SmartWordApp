@@ -8,27 +8,29 @@ import smartWordLogo from './images/pngs/smart-word-logo.png';
 const Header: React.FC = () => {
   return (
     <div className={styles.headerCtn}>
-    <div className={styles.logoCtn}>
-      <Image src={smartWordLogo} alt="Logo"  />
-    </div>
-    <div className={styles.linksCtn}>
-      <Link href="/">
-        <a className={styles.linkTags}>Home</a>
-      </Link>
-      <Link href="/games">
-        <a className={styles.linkTags}>Games</a>
-      </Link>
-      <Link href="/marketplace">
-        <a className={styles.linkTags}>Marketplace</a>
-      </Link>
-      <Link href="/team">
-        <a className={styles.linkTags}>Team</a>
-      </Link>
-      <Link href="/community">
-        <a className={styles.linkTags}>Community</a>
-      </Link>
-      <ConnectButton />
-    </div>
+      <div className={styles.logoCtn}>
+        <Image src={smartWordLogo} alt="Logo" />
+      </div>
+      <div className={styles.linksCtn}>
+        <Link href="/" className={styles.linkTags}>
+          Home
+        </Link>
+        <Link href="/games" className={styles.linkTags}>
+          Games
+        </Link>
+        <Link href="/marketplace" className={styles.linkTags}>
+          Marketplace
+        </Link>
+        <Link href="/team" className={styles.linkTags}>
+          Team
+        </Link>
+        <Link href="/community" className={styles.linkTags}>
+          Community
+        </Link>
+      </div>
+      <div className="btn-div">
+        <ConnectButton />
+      </div>
   </div>
 );
 };
