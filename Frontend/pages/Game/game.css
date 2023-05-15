@@ -51,10 +51,7 @@
     align-items: center;
     width: 350px;
     height: 270px;
-    /* border: 2px solid #f1a48b; */
     border-radius: 5px;
-    /* padding: 30px; */
-    /* background-color: #8a3d24; */
     margin-top: -4rem;
     background: url(../../../public/assets/images/pngs/letter-back.png) no-repeat
       center;

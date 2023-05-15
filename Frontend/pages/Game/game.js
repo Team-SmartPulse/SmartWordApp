@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 const arr = [];
 
+//Game integration
 export default function Game() {
   const [score, setScore] = useState(0);
   const [word, setWord] = useState("");
