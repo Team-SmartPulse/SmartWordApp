@@ -15,10 +15,10 @@ const Header: React.FC = () => {
         <Link href="/" className={styles.linkTags}>
           Home
         </Link>
-        <Link href="/games" className={styles.linkTags}>
+        <Link href="/Game" className={styles.linkTags}>
           Games
         </Link>
-        <Link href="/marketplace" className={styles.linkTags}>
+        <Link href="/Marketplace" className={styles.linkTags}>
           Marketplace
         </Link>
         <Link href="/team" className={styles.linkTags}>

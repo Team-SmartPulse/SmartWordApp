@@ -358,6 +358,73 @@
   }
 }
 
+/* discover */
+.discoverCtn {
+  background-color: #121212;
+  min-height: 100vh;
+}
+.bannerCtn {
+  background-image: url('../Components/images/pngs/blurBack.png');
+  background-size: cover;
+  width: 100%;
+  min-width: 100vw;
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 3vw;
+}
+.bannerCtn > p {
+  font-family: 'AbdoMaster-Bold';
+  font-size: 40px;
+  line-height: 46px;
+  text-align: left;
+  letter-spacing: -1.7px;
+  color: #FFFFFF;
+}
+.belowBannerCtn {
+  padding: 5vh 7vw;
+}
+.inputCtn select{
+  width: inherit;
+  height: 8vh;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1.87092px solid #B4B7BB;
+  border-radius: 14.9674px;
+  padding: 0 1vw;
+  padding-right: 6vw;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 29.9347px;
+  line-height: 45px;
+  letter-spacing: -1.30964px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.inputCtn {
+  position: relative;
+  width: 30vw;
+}
+.inputCtn .discDropdown {
+  position: absolute;
+  top: 13%;
+  right: 1vw;
+  pointer-events: none;
+}
+.popularText {
+  font-family: 'AbdoMaster-Bold';
+  font-size: 35.045px;
+  line-height: 40px;
+  text-align: left;
+  letter-spacing: -1.48941px;
+  color: #FFFFFF;
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
