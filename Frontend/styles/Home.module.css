@@ -13,6 +13,9 @@
   justify-content: space-around;
   align-items: center;
   border-bottom: 1px solid #61666b;
+  position: sticky;
+  top: 0vh;
+  z-index: 100;
 }
 .linksCtn {
   display: flex;
@@ -383,7 +386,11 @@
   color: #FFFFFF;
 }
 .belowBannerCtn {
-  padding: 5vh 7vw;
+  padding: 5vh 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 .inputCtn select{
   width: inherit;
@@ -409,6 +416,7 @@
 .inputCtn {
   position: relative;
   width: 30vw;
+  margin-right: auto;
 }
 .inputCtn .discDropdown {
   position: absolute;
@@ -423,6 +431,64 @@
   text-align: left;
   letter-spacing: -1.48941px;
   color: #FFFFFF;
+  margin-right: auto;
+}
+
+.table {
+  width: 80vw;
+  border-collapse: separate;
+  border-spacing: 0 1em;
+}
+.table .tableHead {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24.5315px;
+  line-height: 29px;
+  letter-spacing: -1.48941px;
+  color: #B4B4B4;
+  margin-left: 7vw;
+  /* text-align: center; */
+}
+.table .tableHead tr > td:first-child {
+  padding-left: 5vw;
+  width: 30%;
+}
+.table .tableBody {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21.027px;
+  letter-spacing: -1.48941px;
+  color: #FFFFFF;
+  background: #232D37;
+  margin-top: 5vh;
+
+}
+.table .tableBody tr {
+  margin-top: 5vh;
+  padding-left: 3vw;
+  cursor: pointer;
+  /* text-align: center; */
+}
+.table .tableBody tr:hover {
+  opacity: 0.5;
+}
+.table .tableBody tr > td:first-child {
+  padding-left: 5vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+.table .tableBody .textDiv p:last-child {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21.027px;
+  color: #B4B4B4;
+  margin-top: -1.2vh;
 }
 
 @media (max-width: 600px) {
