@@ -1,9 +1,9 @@
-import React from 'react';
-import Image from 'next/image';
-import Link from 'next/link'
-import styles from '../styles/Home.module.css'
-import { ConnectButton } from '@rainbow-me/rainbowkit';
-import smartWordLogo from './images/pngs/smart-word-logo.png';
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
+import styles from "../styles/Home.module.css";
+import { ConnectButton } from "@rainbow-me/rainbowkit";
+import smartWordLogo from "./images/pngs/smart-word-logo.png";
 
 const Header: React.FC = () => {
   return (
@@ -36,10 +36,3 @@ const Header: React.FC = () => {
 };
 
 export default Header;
-
-
-
-
-
-
-
