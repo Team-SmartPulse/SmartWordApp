@@ -14,6 +14,17 @@
   align-items: center;
   border-bottom: 1px solid #61666b;
 }
+
+.titleCtn {
+  margin: 0;
+  padding-top: 5rem;
+  font-family: AbdoMaster-Bold ;
+  font-size: 40px;
+  line-height: 46px;
+  letter-spacing: -1.7px;
+  text-align: center;
+}
+
 .linksCtn {
   display: flex;
   justify-content: space-between;
@@ -115,7 +126,12 @@
   font-weight: 400;
   font-size: 16px;
 }
+.teamCtn{
+  background: #121212;
+  color: #fff;
+  text-align: center;
 
+}
 .title a {
   color: #0d76fc;
   text-decoration: none;
@@ -139,9 +155,17 @@
 }
 
 .description {
-  margin: 0 0 2rem;
-  line-height: 1.5;
-  font-size: 1.5rem;
+  margin: 0 auto;
+  font-family:inter ;
+  font-style: normal;
+  font-weight: 400px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.7px;
+  text-align: center;
+  padding-top: 1rem;
+  width: 682px;
+  height: 72px;
 }
 
 .grid {
@@ -186,6 +210,132 @@
   background-color: #121212;
   /* background: linear-gradient(-30deg, #F4B8A4  5%,#121212 6%, rgba(0,0,0, 0.6),#F4B8A4) ; */
   height: 90vh;
+}
+
+.teamContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 5rem;
+  padding-bottom: 4rem;
+  
+}
+
+.members {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin-bottom:1rem;
+}
+
+.memberName{
+  font-family:inter ;
+  font-style: normal;
+  font-weight: 700px;
+  font-size: 18px;
+  line-height: 14px;
+  letter-spacing: -0.7px;
+  text-align: center;
+  margin-top: 0; 
+  margin-bottom: 5px;
+
+}
+.memberRole{
+  font-family:inter ;
+  font-style: normal;
+  font-weight: 400px;
+  font-size: 16px;
+  /* line-height: 4px; */
+  letter-spacing: -0.7px;
+  text-align: center;
+  margin-top: 0; 
+  margin-bottom: 5px;
+
+}
+.imgCtn {
+  background: #fff url(../Components/images/pngs/mary.png) no-repeat center;
+  background-size: contain;
+  border-radius: 50%;
+  width: 360px;
+  height: 360px;
+}
+.mary {
+  background: #fff url(../Components/images/pngs/sabastine.png) no-repeat center;
+  background-size: contain;
+  border-radius: 50%;
+  width: 360px;
+  height: 360px;
+}
+.roohemah {
+  background: #fff url(../Components/images/pngs/roohemah.png) no-repeat center;
+  background-size: contain;
+  border-radius: 50%;
+  width: 360px;
+  height: 360px;
+}
+.divine {
+  background: #fff url(../Components/images/pngs/divine.png) no-repeat center;
+  background-size: contain;
+  border-radius: 50%;
+  width: 360px;
+  height: 360px;
+  padding-top: 2rem;
+
+}
+.favour {
+  background: #fff url(../Components/images/pngs/favour.png) no-repeat center;
+  background-size: contain;
+  border-radius: 50%;
+  width: 360px;
+  height: 360px;
+  padding-top: 2rem;
+
+}
+.idy {
+  background: #fff url(../Components/images/pngs/idy.png) no-repeat center;
+  background-size: contain;
+  border-radius: 50%;
+  width: 360px;
+  height: 360px;
+  padding-top: 2rem;
+
+}
+.shellyna {
+  background: #fff url(../Components/images/pngs/shellyna.png) no-repeat center;
+  background-size: contain;
+  border-radius: 50%;
+  width: 360px;
+  height: 360px;
+  padding-top: 2rem;
+
+}
+.dunnie {
+  background: #fff url(../Components/images/pngs/dunnie.png) no-repeat center;
+  background-size: contain;
+  border-radius: 50%;
+  width: 360px;
+  height: 360px;
+  padding-top: 2rem;
+
+}
+.folasewa {
+  background: #fff url(../Components/images/pngs/folasewa.png) no-repeat center;
+  background-size: contain;
+  border-radius: 50%;
+  width: 360px;
+  height: 360px;
+  padding-top: 2rem;
+}
+.maryam {
+  background: #fff url(../Components/images/pngs/maryam.png) no-repeat center;
+  background-size: contain;
+  border-radius: 50%;
+  width: 360px;
+  height: 360px;
+padding-bottom: 3rem;
 }
 
 @media (max-width: 600px) {
