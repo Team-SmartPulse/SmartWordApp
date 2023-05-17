@@ -48,6 +48,22 @@
   padding: 5px;
   transition: 0.4s;
 }
+div.linksCtn div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  cursor: pointer;
+}
+.linksCtn div p {
+  padding-left: 0.6vw;
+}
 .linksCtn > a:hover {
   color: #8ea9f0;
   border-bottom: 2px solid #8ea9f0;
@@ -513,6 +529,72 @@
   font-size: 21.027px;
   color: #B4B4B4;
   margin-top: -1.2vh;
+}
+
+/* stages */
+.stagesCtn {
+  background-color: #121212;
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.stageTextCtn p:first-child{
+  font-family: 'AbdoMaster-Bold';
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: -1.7px;
+  color: #FFFFFF;
+  margin-bottom: 0;
+}
+.stageTextCtn p:last-child{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: -0.7px;
+  color: #FFFFFF;
+}
+.stageDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: wrap;
+  gap: 30px;
+  width: 90%;
+  margin-top: 5vh;
+  height: 60vh;
+  overflow: auto;
+  white-space: nowrap;
+
+}
+.stages {
+  width: 114px;
+  height: auto;
+  background: rgba(35, 45, 55, 0.5);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: -0.7px;
+  color: #FFFFFF;
+  opacity: 0.45;
+}
+.stageDiv .stages:first-child {
+  opacity: 1;
 }
 
 @media (max-width: 600px) {
