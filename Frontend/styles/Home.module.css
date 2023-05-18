@@ -21,7 +21,7 @@
 .titleCtn {
   margin: 0;
   padding-top: 5rem;
-  font-family: AbdoMaster-Bold ;
+  font-family: AbdoMaster-Bold;
   font-size: 40px;
   line-height: 46px;
   letter-spacing: -1.7px;
@@ -36,7 +36,7 @@
 }
 
 .linksCtn > a {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -53,7 +53,7 @@ div.linksCtn div {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -93,7 +93,7 @@ div.linksCtn div {
   align-items: center;
 }
 .footerCtn {
-  background-color: #000C28;
+  background-color: #000c28;
   height: auto;
   padding: 6vh 8vw 10vh 3vw;
   text-align: center;
@@ -117,14 +117,14 @@ div.linksCtn div {
 .linksDiv {
   text-align: left;
 }
-.linksDiv p.linkHeader{
-  font-family: 'Inter';
+.linksDiv p.linkHeader {
+  font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
 }
-.linksDiv p.links{
-  font-family: 'Inter';
+.linksDiv p.links {
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -140,16 +140,15 @@ div.linksCtn div {
 }
 .copyDiv {
   margin-top: 7vh;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
 }
-.teamCtn{
+.teamCtn {
   background: #121212;
   color: #fff;
   text-align: center;
-
 }
 .title a {
   color: #0d76fc;
@@ -175,7 +174,7 @@ div.linksCtn div {
 
 .description {
   margin: 0 auto;
-  font-family:inter ;
+  font-family: inter;
   font-style: normal;
   font-weight: 400px;
   font-size: 16px;
@@ -231,9 +230,127 @@ div.linksCtn div {
   height: 90vh;
 }
 
+.teamContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 5rem;
+  padding-bottom: 4rem;
+}
+
+.members {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.memberName {
+  font-family: inter;
+  font-style: normal;
+  font-weight: 700px;
+  font-size: 18px;
+  line-height: 14px;
+  letter-spacing: -0.7px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.memberRole {
+  font-family: inter;
+  font-style: normal;
+  font-weight: 400px;
+  font-size: 16px;
+  /* line-height: 4px; */
+  letter-spacing: -0.7px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.imgCtn {
+  background: #fff url(../Components/images/pngs/mary.png) no-repeat center;
+  background-size: contain;
+  border-radius: 50%;
+  width: 360px;
+  height: 360px;
+}
+.mary {
+  background: #fff url(../Components/images/pngs/sabastine.png) no-repeat center;
+  background-size: contain;
+  border-radius: 50%;
+  width: 360px;
+  height: 360px;
+}
+.roohemah {
+  background: #fff url(../Components/images/pngs/roohemah.png) no-repeat center;
+  background-size: contain;
+  border-radius: 50%;
+  width: 360px;
+  height: 360px;
+}
+.divine {
+  background: #fff url(../Components/images/pngs/divine.png) no-repeat center;
+  background-size: contain;
+  border-radius: 50%;
+  width: 360px;
+  height: 360px;
+  padding-top: 2rem;
+}
+.favour {
+  background: #fff url(../Components/images/pngs/favour.png) no-repeat center;
+  background-size: contain;
+  border-radius: 50%;
+  width: 360px;
+  height: 360px;
+  padding-top: 2rem;
+}
+.idy {
+  background: #fff url(../Components/images/pngs/idy.png) no-repeat center;
+  background-size: contain;
+  border-radius: 50%;
+  width: 360px;
+  height: 360px;
+  padding-top: 2rem;
+}
+.shellyna {
+  background: #fff url(../Components/images/pngs/shellyna.png) no-repeat center;
+  background-size: contain;
+  border-radius: 50%;
+  width: 360px;
+  height: 360px;
+  padding-top: 2rem;
+}
+.dunnie {
+  background: #fff url(../Components/images/pngs/dunnie.png) no-repeat center;
+  background-size: contain;
+  border-radius: 50%;
+  width: 360px;
+  height: 360px;
+  padding-top: 2rem;
+}
+.folasewa {
+  background: #fff url(../Components/images/pngs/folasewa.png) no-repeat center;
+  background-size: contain;
+  border-radius: 50%;
+  width: 360px;
+  height: 360px;
+  padding-top: 2rem;
+}
+.maryam {
+  background: #fff url(../Components/images/pngs/maryam.png) no-repeat center;
+  background-size: contain;
+  border-radius: 50%;
+  width: 360px;
+  height: 360px;
+  padding-bottom: 3rem;
+}
+
 /* jumbotron */
 .jumbotronCtn {
-  background-image: url('../Components/images/pngs/extra.png');
+  background-image: url("../Components/images/pngs/extra.png");
   background-size: cover;
   height: 93vh;
   display: flex;
@@ -244,9 +361,9 @@ div.linksCtn div {
   background-position: top;
 }
 .textCtn .extra {
-  font-family: 'AbdoMaster-Bold';
+  font-family: "AbdoMaster-Bold";
   font-size: 106px;
-  color: #FFFFFF;
+  color: #ffffff;
   letter-spacing: -1.7px;
   line-height: 114px;
   padding-bottom: 3vh;
@@ -259,12 +376,12 @@ div.linksCtn div {
 }
 .belowExtra {
   margin-top: -15vh;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-size: 28px;
   letter-spacing: -1.7px;
-  color: #FFFFFF;
+  color: #ffffff;
   animation: slide-in-from-bottom 0.7s ease-in forwards 0.1s;
 }
 .demoBtn {
@@ -274,45 +391,44 @@ div.linksCtn div {
   align-items: center;
   width: 305px;
   height: 56px;
-  background: #416FE6;
+  background: #416fe6;
   border-radius: 8px;
   border: none;
   /* margin-bottom: 10vh; */
   margin-top: 8vh;
-  font-family: 'AbdoMaster-Bold';
+  font-family: "AbdoMaster-Bold";
   font-size: 16px;
   line-height: 24px;
   text-align: center;
   letter-spacing: -0.7px;
-  color: #FFFFFF;
+  color: #ffffff;
   cursor: pointer;
   animation: slide-in-from-bottom 0.7s ease-in forwards 0.3s;
 }
 
 @keyframes slide-in-from-left {
   0% {
-      transform: translateX(-10vw);
+    transform: translateX(-10vw);
   }
   100% {
-      transform: translateX(0vw);
+    transform: translateX(0vw);
   }
 }
 @keyframes slide-in-from-bottom {
   0% {
-      transform: translateY(10vw);
-      opacity: 0;
+    transform: translateY(10vw);
+    opacity: 0;
   }
   100% {
-      transform: translateY(0vw);
-      opacity: 1;
+    transform: translateY(0vw);
+    opacity: 1;
   }
 }
-
 
 /* levels */
 
 .levelCtn {
-  background-color: #232D37;
+  background-color: #232d37;
   height: auto;
   width: 100%;
   min-width: 100vw;
@@ -326,11 +442,11 @@ div.linksCtn div {
   padding: 10vh 0;
 }
 .levelCtn > p {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   text-align: center;
   letter-spacing: -0.7px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .levelText {
   /* font-family: 'AbdoMaster-Bold'; */
@@ -354,14 +470,14 @@ div.linksCtn div {
   flex-flow: wrap;
 }
 .levelName {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-size: 28px;
   line-height: 34px;
   text-align: center;
   letter-spacing: -1.7px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .levelTypes .img {
   position: relative;
@@ -369,7 +485,7 @@ div.linksCtn div {
 }
 .levelTypes:hover .img::before {
   position: absolute;
-  content: '';
+  content: "";
   left: 0;
   top: 0;
   right: 0;
@@ -381,23 +497,23 @@ div.linksCtn div {
 
 @keyframes ripple {
   100% {
-      transform: scale(1.2);
-      opacity: 0;
+    transform: scale(1.2);
+    opacity: 0;
   }
 }
 
 @keyframes ripple-body {
   0% {
-      transform: scale(1);
+    transform: scale(1);
   }
   25% {
-      transform: scale(1.01);
+    transform: scale(1.01);
   }
   50% {
-      transform: scale(1.02);
+    transform: scale(1.02);
   }
   100% {
-      transform: scale(1);
+    transform: scale(1);
   }
 }
 
@@ -407,7 +523,7 @@ div.linksCtn div {
   min-height: 100vh;
 }
 .bannerCtn {
-  background-image: url('../Components/images/pngs/blurBack.png');
+  background-image: url("../Components/images/pngs/blurBack.png");
   background-size: cover;
   width: 100%;
   min-width: 100vw;
@@ -418,12 +534,12 @@ div.linksCtn div {
   padding-left: 3vw;
 }
 .bannerCtn > p {
-  font-family: 'AbdoMaster-Bold';
+  font-family: "AbdoMaster-Bold";
   font-size: 40px;
   line-height: 46px;
   text-align: left;
   letter-spacing: -1.7px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .belowBannerCtn {
   padding: 5vh 10vw;
@@ -432,11 +548,11 @@ div.linksCtn div {
   justify-content: flex-start;
   align-items: center;
 }
-.inputCtn select{
+.inputCtn select {
   width: inherit;
   height: 8vh;
   background: rgba(255, 255, 255, 0.15);
-  border: 1.87092px solid #B4B7BB;
+  border: 1.87092px solid #b4b7bb;
   border-radius: 14.9674px;
   padding: 0 1vw;
   padding-right: 6vw;
@@ -444,13 +560,13 @@ div.linksCtn div {
   -moz-appearance: none;
   appearance: none;
   outline: none;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 29.9347px;
   line-height: 45px;
   letter-spacing: -1.30964px;
-  color: #FFFFFF;
+  color: #ffffff;
   cursor: pointer;
 }
 .inputCtn {
@@ -465,12 +581,12 @@ div.linksCtn div {
   pointer-events: none;
 }
 .popularText {
-  font-family: 'AbdoMaster-Bold';
+  font-family: "AbdoMaster-Bold";
   font-size: 35.045px;
   line-height: 40px;
   text-align: left;
   letter-spacing: -1.48941px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-right: auto;
 }
 
@@ -480,13 +596,13 @@ div.linksCtn div {
   border-spacing: 0 1em;
 }
 .table .tableHead {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-size: 24.5315px;
   line-height: 29px;
   letter-spacing: -1.48941px;
-  color: #B4B4B4;
+  color: #b4b4b4;
   margin-left: 7vw;
   /* text-align: center; */
 }
@@ -495,15 +611,14 @@ div.linksCtn div {
   width: 30%;
 }
 .table .tableBody {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-size: 21.027px;
   letter-spacing: -1.48941px;
-  color: #FFFFFF;
-  background: #232D37;
+  color: #ffffff;
+  background: #232d37;
   margin-top: 5vh;
-
 }
 .table .tableBody tr {
   margin-top: 5vh;
@@ -523,11 +638,11 @@ div.linksCtn div {
   gap: 10px;
 }
 .table .tableBody .textDiv p:last-child {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-size: 21.027px;
-  color: #B4B4B4;
+  color: #b4b4b4;
   margin-top: -1.2vh;
 }
 
@@ -541,22 +656,22 @@ div.linksCtn div {
   justify-content: flex-start;
   align-items: center;
 }
-.stageTextCtn p:first-child{
-  font-family: 'AbdoMaster-Bold';
+.stageTextCtn p:first-child {
+  font-family: "AbdoMaster-Bold";
   font-size: 40px;
   text-align: center;
   letter-spacing: -1.7px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 0;
 }
-.stageTextCtn p:last-child{
-  font-family: 'Inter';
+.stageTextCtn p:last-child {
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   text-align: center;
   letter-spacing: -0.7px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .stageDiv {
   display: flex;
@@ -570,7 +685,6 @@ div.linksCtn div {
   height: 60vh;
   overflow: auto;
   white-space: nowrap;
-
 }
 .stages {
   width: 114px;
@@ -583,14 +697,14 @@ div.linksCtn div {
   align-items: center;
   padding: 12px 20px;
   cursor: pointer;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
   text-align: center;
   letter-spacing: -0.7px;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 0.45;
 }
 .stageDiv .stages:first-child {
@@ -625,14 +739,13 @@ body {
   color: #fff;
 }
 
-
 .input-container {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background: url(../../../public/assets/images/pngs/word-back.png) no-repeat
-    center;
+  /* background: url(../../../public/assets/images/pngs/word-back.png) no-repeat */
+  /* center; */
   background-size: contain;
   padding: 6rem 8rem;
   margin-top: -2rem;
@@ -663,8 +776,8 @@ body {
   /* padding: 30px; */
   /* background-color: #8a3d24; */
   margin-top: -4rem;
-  background: url(../../../public/assets/images/pngs/letter-back.png) no-repeat
-    center;
+  /* background: url(../../../public/assets/images/pngs/letter-back.png) no-repeat
+    center; */
   background-size: contain;
 }
 
@@ -699,8 +812,8 @@ body {
   justify-content: center;
   width: 20rem;
   height: 6rem;
-  background: url(../../../public/assets/images/pngs/coin-back.png) no-repeat
-    center;
+  /* background: url(../../../public/assets/images/pngs/coin-back.png) no-repeat
+    center; */
   background-size: contain;
   font-size: 2rem;
   font-weight: 800;
@@ -739,7 +852,7 @@ body {
   padding: 1rem 4rem;
   margin-bottom: -4rem;
   z-index: 999;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 .congrats {
