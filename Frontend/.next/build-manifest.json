@@ -15,6 +15,7 @@
   ],
   "rootMainFiles": [],
   "pages": {
+<<<<<<< HEAD
     "/Game/level": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
@@ -25,6 +26,8 @@
       "static/chunks/main.js",
       "static/chunks/pages/Game/stages.js"
     ],
+=======
+>>>>>>> eba42f5372d0f42d828b21b72b30966ef00fabd3
     "/_app": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
@@ -34,6 +37,11 @@
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
+    ],
+    "/marketplace": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/marketplace.js"
     ]
   },
   "ampFirstPages": []

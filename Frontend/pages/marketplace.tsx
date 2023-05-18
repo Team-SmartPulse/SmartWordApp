@@ -1,8 +1,13 @@
 import React from 'react'
+import Footer from '../Components/Footer'
+import MarketPlaceHeader from '../Components/MarketPlaceHeader'
 
 const marketPlace = () => {
   return (
-    <div>marketPlace</div>
+    <div>
+        <MarketPlaceHeader />
+        <Footer />
+    </div>
   )
 }
 

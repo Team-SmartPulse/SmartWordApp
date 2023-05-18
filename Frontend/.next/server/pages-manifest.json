@@ -2,6 +2,10 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
+<<<<<<< HEAD
   "/Game/stages": "pages/Game/stages.js",
   "/Game/level": "pages/Game/level.js"
+=======
+  "/marketplace": "pages/marketplace.js"
+>>>>>>> eba42f5372d0f42d828b21b72b30966ef00fabd3
 }
