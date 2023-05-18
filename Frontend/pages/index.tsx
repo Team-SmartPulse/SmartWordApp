@@ -5,11 +5,13 @@ import Header from "../Components/Header";
 import Footer from "../Components/Footer";
 import Jumbotron from "../Components/Jumbotron";
 import Levels from "../Components/Levels";
+import { LandingPage1 } from "../Components/LandingPage1";
 
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <Header />
+      <LandingPage1 />
         <Jumbotron />
         <Levels />
         <Footer />

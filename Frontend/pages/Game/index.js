@@ -1,5 +1,5 @@
 import React from "react";
-// import "./game.css";
+import styles from "../../styles/Home.module.css";
 import GameHeader from "../../Components/GameHeader/gameHeader";
 import { useState, useEffect } from "react";
 import axios from "axios";
