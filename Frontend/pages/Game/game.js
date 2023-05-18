@@ -23,6 +23,11 @@ export default function Game() {
   const [twoLetterWord, setTwoLetterWord] = useState(["", ""]);
   const [btnText, setBtnText] = useState("Start Game");
   const [stage, setStage] = useState(1);
+  const [level, setLevel] = useState({
+    level1: "Beginner",
+    level2: "Intermediate",
+    level3: "Advanced",
+  });
   const fiveArr = [0, 1, 2, 3, 4];
   const fourArr = [0, 1, 2, 3];
   const threeArr = [0, 1, 2];
@@ -160,7 +165,12 @@ export default function Game() {
             </div>
           )}
         </div>
-        {!congrats && <span className="stage">Stage {stage}</span>}
+        {!congrats && (
+          <div className="stage">
+            <span>{level.level1}</span>
+            <span>Stage {stage}</span>
+          </div>
+        )}
         {!congrats && (
           <div className="input-container">
             <div className="first-row">
