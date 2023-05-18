@@ -15,6 +15,11 @@
   ],
   "rootMainFiles": [],
   "pages": {
+    "/Game/level": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/Game/level.js"
+    ],
     "/Game/stages": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
