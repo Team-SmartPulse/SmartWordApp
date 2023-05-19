@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from "next/link";
 import styles from '../styles/Home.module.css'
-import PlayIcon from './images/pngs/play.png';
+import PlayIcon from './images/pngs/Play.png';
 import HeroImg from './images/pngs/hero-img.png';
 
 const Jumbotron: React.FC = () => {

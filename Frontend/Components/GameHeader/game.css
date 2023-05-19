@@ -51,10 +51,14 @@
     align-items: center;
     width: 350px;
     height: 270px;
+<<<<<<< HEAD
     /* border: 2px solid #f1a48b; */
     border-radius: 5px;
     /* padding: 30px; */
     /* background-color: #8a3d24; */
+=======
+    border-radius: 5px;
+>>>>>>> 5095bb57607724c0afdd87d27d7e9c1572237ffe
     margin-top: -4rem;
     background: url(../../../public/assets/images/pngs/letter-back.png) no-repeat
       center;

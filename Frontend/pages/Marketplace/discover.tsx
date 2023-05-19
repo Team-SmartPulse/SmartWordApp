@@ -5,7 +5,7 @@ import styles from '../../styles/Home.module.css';
 import Dropdown from '../../Components/images/pngs/discArrowDown.png';
 import Discover from '../../Components/Discover'
 import Footer from '../../Components/Footer';
-import Header from '../../Components/Header';
+import {Header} from '../../Components/Header';
 
 const DiscoverPage: React.FC = () => {
   return (

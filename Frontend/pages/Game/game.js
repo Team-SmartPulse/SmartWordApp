@@ -1,10 +1,12 @@
 import React from "react";
-import styles from "../../styles/Home.module.css";
 import GameHeader from "../../Components/gameHeader";
+import styles from "../../styles/Home.module.css";
 import { useState, useEffect } from "react";
 import axios from "axios";
+
 const arr = [];
 
+//Game integration
 export default function Game() {
   const [score, setScore] = useState(0);
   const [word, setWord] = useState("");
@@ -27,7 +29,6 @@ export default function Game() {
     level2: "Intermediate",
     level3: "Advanced",
   });
-
   const fiveArr = [0, 1, 2, 3, 4];
   const fourArr = [0, 1, 2, 3];
   const threeArr = [0, 1, 2];
@@ -156,110 +157,105 @@ export default function Game() {
 
   return (
     <div className={styles["game-ctn"]}>
-      <div className={styles["game-ctn"]}>
-        <GameHeader />
-        <div className={styles["game-body-ctn"]}>
-          <div>
-            {!congrats && (
-              <div className={styles["score"]}>
-                <span>{score} SMC</span>
-              </div>
-            )}
+      <GameHeader />
+      <div className={styles["game-body-ctn"]}>
+        <div>
+          {!congrats && (
+            <div className={styles["score"]}>
+              <span>{score} SMC</span>
+            </div>
+          )}
+        </div>
+        {!congrats && (
+          <div className={styles["stage"]}>
+            <span>{level.level1}</span>
+            <span>Stage {stage}</span>
           </div>
-          {!congrats && (
-            <div className={styles["stage"]}>
-              <span>{level.level1}</span>
-              <span>Stage {stage}</span>
+        )}
+        {!congrats && (
+          <div className={styles["input-container"]}>
+            <div className={styles["first-row"]}>
+              {fiveArr.map((index) => (
+                <input
+                  key={index}
+                  type="text"
+                  value={fiveLetterWord[index]}
+                  className={styles["input-field"]}
+                  disabled
+                />
+              ))}
             </div>
-          )}
-          {!congrats && (
-            <div className={styles["input-container"]}>
-              <div className={styles["first-row"]}>
-                {fiveArr.map((index) => (
-                  <input
-                    key={index}
-                    type="text"
-                    value={fiveLetterWord[index]}
-                    className={styles["input-field"]}
-                    disabled
-                  />
-                ))}
-              </div>
-              <div className={styles["second-row"]}>
-                {fourArr.map((index) => (
-                  <input
-                    key={index}
-                    type="text"
-                    value={fourLetterWord[index]}
-                    className={styles["input-field"]}
-                    disabled
-                  />
-                ))}
-              </div>
-              <div className={styles["second-row"]}>
-                {threeArr.map((index) => (
-                  <input
-                    key={index}
-                    type="text"
-                    value={threeLetterWord[index]}
-                    className={styles["input-field"]}
-                    disabled
-                  />
-                ))}
-              </div>
-              <div className={styles["second-row"]}>
-                {twoArr.map((index) => (
-                  <input
-                    key={index}
-                    type="text"
-                    value={twoLetterWord[index]}
-                    className={styles["input-field"]}
-                    disabled
-                  />
-                ))}
-              </div>
+            <div className={styles["second-row"]}>
+              {fourArr.map((index) => (
+                <input
+                  key={index}
+                  type="text"
+                  value={fourLetterWord[index]}
+                  className={styles["input-field"]}
+                  disabled
+                />
+              ))}
             </div>
-          )}
-          {congrats && <h1 className={styles["congrats"]}>{congrats}</h1>}
+            <div className={styles["second-row"]}>
+              {threeArr.map((index) => (
+                <input
+                  key={index}
+                  type="text"
+                  value={threeLetterWord[index]}
+                  className={styles["input-field"]}
+                  disabled
+                />
+              ))}
+            </div>
+            <div className={styles["second-row"]}>
+              {twoArr.map((index) => (
+                <input
+                  key={index}
+                  type="text"
+                  value={twoLetterWord[index]}
+                  className={styles["input-field"]}
+                  disabled
+                />
+              ))}
+            </div>
+          </div>
+        )}
+        {congrats && <h1 className={styles["congrats"]}>{congrats}</h1>}
 
-          <div className={styles["container"]}>
-            {!congrats && (
-              <div className={styles["box"]}>
-                <div>{alert}</div>
-                {clickLetter && (
-                  <div className={styles["word-display"]}>
-                    {wordDisplay} <button onClick={submitWord}>Submit</button>
-                    <button onClick={clearWord}>Clear</button>
-                  </div>
-                )}
-                <div className={styles["letter-btns"]}>
-                  {wordArr.map((letter, index) => (
-                    <button
-                      key={index}
-                      className={styles["word-btn"]}
-                      onClick={() => {
-                        selectLetter(letter, index);
-                      }}
-                      disabled={disabledButtons.includes(index)}
-                    >
-                      {letter}
-                    </button>
-                  ))}
+        <div className={styles["container"]}>
+          {!congrats && (
+            <div className={styles["box"]}>
+              <div>{alert}</div>
+              {clickLetter && (
+                <div className={styles["word-display"]}>
+                  {wordDisplay} <button onClick={submitWord}>Submit</button>
+                  <button onClick={clearWord}>Clear</button>
                 </div>
-                <div className={styles["btns"]}>
-                  <button className={styles["start-btn"]} onClick={startGame}>
-                    {btnText}
-                  </button>
+              )}
+              <div className={styles["letter-btns"]}>
+                {wordArr.map((letter, index) => (
                   <button
-                    className={styles["rearrange"]}
-                    onClick={rearrangeWord}
+                    key={index}
+                    className={styles["word-btn"]}
+                    onClick={() => {
+                      selectLetter(letter, index);
+                    }}
+                    disabled={disabledButtons.includes(index)}
                   >
-                    Shuffle
+                    {letter}
                   </button>
-                </div>
+                ))}
               </div>
-            )}
-          </div>
+              <div className={styles["btns"]}>
+                <button className={styles["start-btn"]} onClick={startGame}>
+                  {btnText}
+                </button>
+                <button className={styles["rearrange"]} onClick={rearrangeWord}>
+                  Shuffle
+                </button>
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </div>

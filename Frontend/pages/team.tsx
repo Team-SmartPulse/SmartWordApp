@@ -1,6 +1,6 @@
 import React from 'react'
 import Footer from '../Components/Footer'
-import Header from '../Components/Header'
+import {Header} from '../Components/Header'
 import TeamPage from '../Components/TeamPage'
 
 const Team = () => {
