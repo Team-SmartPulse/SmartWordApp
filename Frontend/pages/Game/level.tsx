@@ -6,7 +6,7 @@ import Coin from "../../Components/images/pngs/coins.png";
 import Star from "../../Components/images/pngs/star.png";
 import Touch from "../../Components/images/pngs/touch.png";
 import Bulb from "../../Components/images/pngs/bulb.png";
-import PlayIcon from "../../Components/images/pngs/play.png";
+import PlayIcon from "../../Components/images/pngs/Play.png";
 import GameHeader from "../../Components/gameHeader";
 
 const Level: React.FC = () => {
