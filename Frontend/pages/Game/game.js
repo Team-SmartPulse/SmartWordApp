@@ -1,12 +1,13 @@
 import React from "react";
-import "./game.css";
-import GameHeader from "../../Components/GameHeader";
+import GameHeader from "../../Components/gameHeader";
+import styles from "../../styles/Home.module.css";
 import { useState, useEffect } from "react";
 import axios from "axios";
+
 const arr = [];
 
 //Game integration
-export default function Game() {
+export default async function Game() {
   const [score, setScore] = useState(0);
   const [word, setWord] = useState("");
   const [wordArr, setWordArr] = useState([]);
@@ -155,87 +156,87 @@ export default function Game() {
   }, [newGame]);
 
   return (
-    <div className="game-ctn">
+    <div className={styles["game-ctn"]}>
       <GameHeader />
-      <div className="game-body-ctn">
+      <div className={styles["game-body-ctn"]}>
         <div>
           {!congrats && (
-            <div className="score">
+            <div className={styles["score"]}>
               <span>{score} SMC</span>
             </div>
           )}
         </div>
         {!congrats && (
-          <div className="stage">
+          <div className={styles["stage"]}>
             <span>{level.level1}</span>
             <span>Stage {stage}</span>
           </div>
         )}
         {!congrats && (
-          <div className="input-container">
-            <div className="first-row">
+          <div className={styles["input-container"]}>
+            <div className={styles["first-row"]}>
               {fiveArr.map((index) => (
                 <input
                   key={index}
                   type="text"
                   value={fiveLetterWord[index]}
-                  className="input-field"
+                  className={styles["input-field"]}
                   disabled
                 />
               ))}
             </div>
-            <div className="second-row">
+            <div className={styles["second-row"]}>
               {fourArr.map((index) => (
                 <input
                   key={index}
                   type="text"
                   value={fourLetterWord[index]}
-                  className="input-field"
+                  className={styles["input-field"]}
                   disabled
                 />
               ))}
             </div>
-            <div className="second-row">
+            <div className={styles["second-row"]}>
               {threeArr.map((index) => (
                 <input
                   key={index}
                   type="text"
                   value={threeLetterWord[index]}
-                  className="input-field"
+                  className={styles["input-field"]}
                   disabled
                 />
               ))}
             </div>
-            <div className="second-row">
+            <div className={styles["second-row"]}>
               {twoArr.map((index) => (
                 <input
                   key={index}
                   type="text"
                   value={twoLetterWord[index]}
-                  className="input-field"
+                  className={styles["input-field"]}
                   disabled
                 />
               ))}
             </div>
           </div>
         )}
-        {congrats && <h1 className="congrats">{congrats}</h1>}
+        {congrats && <h1 className={styles["congrats"]}>{congrats}</h1>}
 
-        <div className="container">
+        <div className={styles["container"]}>
           {!congrats && (
-            <div className="box">
+            <div className={styles["box"]}>
               <div>{alert}</div>
               {clickLetter && (
-                <div className="word-display">
+                <div className={styles["word-display"]}>
                   {wordDisplay} <button onClick={submitWord}>Submit</button>
                   <button onClick={clearWord}>Clear</button>
                 </div>
               )}
-              <div className="letter-btns">
+              <div className={styles["letter-btns"]}>
                 {wordArr.map((letter, index) => (
                   <button
                     key={index}
-                    className="word-btn"
+                    className={styles["word-btn"]}
                     onClick={() => {
                       selectLetter(letter, index);
                     }}
@@ -245,11 +246,11 @@ export default function Game() {
                   </button>
                 ))}
               </div>
-              <div className="btns">
-                <button className="start-btn" onClick={startGame}>
+              <div className={styles["btns"]}>
+                <button className={styles["start-btn"]} onClick={startGame}>
                   {btnText}
                 </button>
-                <button className="rearrange" onClick={rearrangeWord}>
+                <button className={styles["rearrange"]} onClick={rearrangeWord}>
                   Shuffle
                 </button>
               </div>

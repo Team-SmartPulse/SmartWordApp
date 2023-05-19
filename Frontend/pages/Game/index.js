@@ -1,10 +1,6 @@
 import React from "react";
-<<<<<<< HEAD
 import styles from "../../styles/Home.module.css";
-=======
-// import "./game.css";
->>>>>>> 5095bb57607724c0afdd87d27d7e9c1572237ffe
-import GameHeader from "../../Components/GameHeader/gameHeader";
+import GameHeader from "../../Components/gameHeader";
 import { useState, useEffect } from "react";
 import axios from "axios";
 const arr = [];
@@ -26,6 +22,12 @@ export default function Game() {
   const [twoLetterWord, setTwoLetterWord] = useState(["", ""]);
   const [btnText, setBtnText] = useState("Start Game");
   const [stage, setStage] = useState(1);
+  const [level, setLevel] = useState({
+    level1: "Beginner",
+    level2: "Intermediate",
+    level3: "Advanced",
+  });
+
   const fiveArr = [0, 1, 2, 3, 4];
   const fourArr = [0, 1, 2, 3];
   const threeArr = [0, 1, 2];
@@ -153,7 +155,6 @@ export default function Game() {
   }, [newGame]);
 
   return (
-<<<<<<< HEAD
     <div className={styles["game-ctn"]}>
       <div className={styles["game-ctn"]}>
         <GameHeader />
@@ -165,7 +166,12 @@ export default function Game() {
               </div>
             )}
           </div>
-          {!congrats && <span className={styles["stage"]}>Stage {stage}</span>}
+          {!congrats && (
+            <div className={styles["stage"]}>
+              <span>{level.level1}</span>
+              <span>Stage {stage}</span>
+            </div>
+          )}
           {!congrats && (
             <div className={styles["input-container"]}>
               <div className={styles["first-row"]}>
@@ -254,109 +260,8 @@ export default function Game() {
               </div>
             )}
           </div>
-=======
-    <div className="game-ctn">
-      <GameHeader />
-      <div className="game-body-ctn">
-        <div>
-          {!congrats && (
-            <div className="score">
-              <span>{score} SMC</span>
-            </div>
-          )}
-        </div>
-        {!congrats && <span className="stage">Stage {stage}</span>}
-        {!congrats && (
-          <div className="input-container">
-            <div className="first-row">
-              {fiveArr.map((index) => (
-                <input
-                  key={index}
-                  type="text"
-                  value={fiveLetterWord[index]}
-                  className="input-field"
-                  disabled
-                />
-              ))}
-            </div>
-            <div className="second-row">
-              {fourArr.map((index) => (
-                <input
-                  key={index}
-                  type="text"
-                  value={fourLetterWord[index]}
-                  className="input-field"
-                  disabled
-                />
-              ))}
-            </div>
-            <div className="second-row">
-              {threeArr.map((index) => (
-                <input
-                  key={index}
-                  type="text"
-                  value={threeLetterWord[index]}
-                  className="input-field"
-                  disabled
-                />
-              ))}
-            </div>
-            <div className="second-row">
-              {twoArr.map((index) => (
-                <input
-                  key={index}
-                  type="text"
-                  value={twoLetterWord[index]}
-                  className="input-field"
-                  disabled
-                />
-              ))}
-            </div>
-          </div>
-        )}
-        {congrats && <h1 className="congrats">{congrats}</h1>}
-
-        <div className="container">
-          {!congrats && (
-            <div className="box">
-              <div>{alert}</div>
-              {clickLetter && (
-                <div className="word-display">
-                  {wordDisplay} <button onClick={submitWord}>Submit</button>
-                  <button onClick={clearWord}>Clear</button>
-                </div>
-              )}
-              <div className="letter-btns">
-                {wordArr.map((letter, index) => (
-                  <button
-                    key={index}
-                    className="word-btn"
-                    onClick={() => {
-                      selectLetter(letter, index);
-                    }}
-                    disabled={disabledButtons.includes(index)}
-                  >
-                    {letter}
-                  </button>
-                ))}
-              </div>
-              <div className="btns">
-                <button className="start-btn" onClick={startGame}>
-                  {btnText}
-                </button>
-                <button className="rearrange" onClick={rearrangeWord}>
-                  Shuffle
-                </button>
-              </div>
-            </div>
-          )}
->>>>>>> 5095bb57607724c0afdd87d27d7e9c1572237ffe
         </div>
       </div>
     </div>
   );
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 5095bb57607724c0afdd87d27d7e9c1572237ffe

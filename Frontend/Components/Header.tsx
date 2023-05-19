@@ -5,7 +5,7 @@ import styles from "../styles/Home.module.css";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 import smartWordLogo from "./images/pngs/smart-word-logo.png";
 
-const Header: React.FC = () => {
+export const Header: React.FC = () => {
   return (
     <div className={styles.headerCtn}>
       <div className={styles.logoCtn}>

@@ -8,7 +8,7 @@ RUN yarn
 
 COPY . .
 
-RUN yarn tsc
+RUN yarn build
 
 EXPOSE 3000
 

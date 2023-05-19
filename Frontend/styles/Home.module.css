@@ -16,7 +16,6 @@
   position: sticky;
   top: 0vh;
   z-index: 100;
-<<<<<<< HEAD
 }
 
 .titleCtn {
@@ -720,24 +719,17 @@ div.linksCtn div {
   justify-content: space-around;
   align-items: center;
   text-align: center;
-  padding-top: 0;
-  margin-top: 0;
-  width: 100%;
-  min-width: 100vw;
   color: #fff;
 }
 
- /* * {
-  color: #fff;
-} */
-
-/* body {
-  background-color: #121212;
-}  */
-
 .game-ctn {
+  display: flex;
+  flex-direction: column;
   background-color: #121212;
-  /* color: #fff; */
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
 }
 
 .input-container {
@@ -846,11 +838,14 @@ div.linksCtn div {
 }
 
 .stage {
+  display: flex;
+  flex-direction: column;
   background-color: #8a3d24;
   padding: 1rem 4rem;
   margin-bottom: -4rem;
   z-index: 999;
   border-radius: 0.5rem;
+  /* height: 6rem; */
 }
 
 .congrats {
@@ -878,8 +873,6 @@ div.linksCtn div {
   justify-content: space-around;
   align-items: center;
   border-bottom: 1px solid #61666b;
-=======
->>>>>>> 5095bb57607724c0afdd87d27d7e9c1572237ffe
 }
 
 .titleCtn {

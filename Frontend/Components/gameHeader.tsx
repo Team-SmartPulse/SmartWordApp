@@ -1,9 +1,9 @@
 import React from 'react';
-import styles from '../../styles/Home.module.css';
+import styles from '../styles/Home.module.css';
 import Image from 'next/image';
 import Link from "next/link";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
-import smartWordLogo from "../images/pngs/smart-word-logo.png";
+import smartWordLogo from "./images/pngs/smart-word-logo.png";
 
 const GameHeader: React.FC = () => {
   return (
