@@ -1,0 +1,96 @@
+  .image-text-section {
+    display: grid;
+    cursor: pointer;
+    background-color:#232D37;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 2rem;
+    padding: 2rem;
+    
+    
+
+
+    
+    
+  }
+  
+  .text-container {
+    display: flex;
+    cursor: pointer;
+    background-color: #232D37;
+    flex-direction: column;
+    justify-content: right;
+    align-items: flex-start;
+    gap: 1px;
+    position: absolute;
+    width: 602px;
+    height: 194px;
+    left: 700px;
+  
+  }
+  
+  .text-container h2 {
+    cursor: pointer;
+    color: white;
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  
+  .bridge {
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  
+  .hero-btn {
+    background-color: black ;
+    font-family: 'AbdoMaster-Bold';
+    color: #F4B8A4;;
+    border-style: dashed;
+    border: 10px;
+    margin: 60px;
+    padding: 10px 20px;
+    font-size: 10px;
+    cursor: pointer;
+    
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 80px;
+    gap: 10px;
+
+    position: flex;
+    width: 315px;
+    height: 56px;
+    left: 0px;
+
+    border: 1px solid #F4B8A4;
+    border-radius: 8px;
+  }
+  
+  .img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: flex;
+    width: 434px;
+    height: 400px;
+    left: 140px;
+    
+  }
+  
+  .img-container img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .ToEarn-logo{
+    height: 371px;
+    width: 434px;
+    left: 752px;
+    top: 52px;
+    border-radius: 0px;
+  }
