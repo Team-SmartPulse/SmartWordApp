@@ -12,9 +12,9 @@ const Home: NextPage = () => {
     <div className={styles.container}>
       <Header />
       <LandingPage1 />
-        <Jumbotron />
-        <Levels />
-        <Footer />
+      <Jumbotron />
+      <Levels />
+      <Footer />
     </div>
   );
 };

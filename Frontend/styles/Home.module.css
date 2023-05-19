@@ -726,17 +726,17 @@ div.linksCtn div {
   color: #fff;
 }
 
-/* * {
+ /* * {
   color: #fff;
-}
-
-body {
-  background-color: #121212;
 } */
+
+/* body {
+  background-color: #121212;
+}  */
 
 .game-ctn {
   background-color: #121212;
-  color: #fff;
+  /* color: #fff; */
 }
 
 .input-container {
@@ -744,8 +744,8 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  /* background: url(../../../public/assets/images/pngs/word-back.png) no-repeat */
-  /* center; */
+  background: url(../Components/images/pngs/word-back.png) no-repeat 
+  center;
   background-size: contain;
   padding: 6rem 8rem;
   margin-top: -2rem;
@@ -771,14 +771,11 @@ body {
   align-items: center;
   width: 350px;
   height: 270px;
-  /* border: 2px solid #f1a48b; */
   border-radius: 5px;
-  /* padding: 30px; */
-  /* background-color: #8a3d24; */
   margin-top: -4rem;
-  /* background: url(../../../public/assets/images/pngs/letter-back.png) no-repeat
-    center; */
-  background-size: contain;
+  background: url(../Components/images/pngs/letter-back.png) no-repeat
+    center;
+  background-size: contain; 
 }
 
 .word-btn {
@@ -812,8 +809,8 @@ body {
   justify-content: center;
   width: 20rem;
   height: 6rem;
-  /* background: url(../../../public/assets/images/pngs/coin-back.png) no-repeat
-    center; */
+  background: url(../Components/images/pngs/coin-back.png) no-repeat
+    center;
   background-size: contain;
   font-size: 2rem;
   font-weight: 800;
