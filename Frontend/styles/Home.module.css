@@ -737,8 +737,7 @@ div.linksCtn div {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background: url(../Components/images/pngs/word-back.png) no-repeat 
-  center;
+  background: url(../Components/images/pngs/word-back.png) no-repeat center;
   background-size: contain;
   padding: 6rem 8rem;
   margin-top: -2rem;
@@ -766,9 +765,8 @@ div.linksCtn div {
   height: 270px;
   border-radius: 5px;
   margin-top: -4rem;
-  background: url(../Components/images/pngs/letter-back.png) no-repeat
-    center;
-  background-size: contain; 
+  background: url(../Components/images/pngs/letter-back.png) no-repeat center;
+  background-size: contain;
 }
 
 .word-btn {
@@ -802,8 +800,7 @@ div.linksCtn div {
   justify-content: center;
   width: 20rem;
   height: 6rem;
-  background: url(../Components/images/pngs/coin-back.png) no-repeat
-    center;
+  background: url(../Components/images/pngs/coin-back.png) no-repeat center;
   background-size: contain;
   font-size: 2rem;
   font-weight: 800;
@@ -878,7 +875,7 @@ div.linksCtn div {
 .titleCtn {
   margin: 0;
   padding-top: 5rem;
-  font-family: AbdoMaster-Bold ;
+  font-family: AbdoMaster-Bold;
   font-size: 40px;
   line-height: 46px;
   letter-spacing: -1.7px;
@@ -893,7 +890,7 @@ div.linksCtn div {
 }
 
 .linksCtn > a {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -910,7 +907,7 @@ div.linksCtn div {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -950,7 +947,7 @@ div.linksCtn div {
   align-items: center;
 }
 .footerCtn {
-  background-color: #000C28;
+  background-color: #000c28;
   height: auto;
   padding: 6vh 8vw 10vh 3vw;
   text-align: center;
@@ -974,14 +971,14 @@ div.linksCtn div {
 .linksDiv {
   text-align: left;
 }
-.linksDiv p.linkHeader{
-  font-family: 'Inter';
+.linksDiv p.linkHeader {
+  font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
 }
-.linksDiv p.links{
-  font-family: 'Inter';
+.linksDiv p.links {
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -997,16 +994,15 @@ div.linksCtn div {
 }
 .copyDiv {
   margin-top: 7vh;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
 }
-.teamCtn{
+.teamCtn {
   background: #121212;
   color: #fff;
   text-align: center;
-
 }
 .title a {
   color: #0d76fc;
@@ -1032,7 +1028,7 @@ div.linksCtn div {
 
 .description {
   margin: 0 auto;
-  font-family:inter ;
+  font-family: inter;
   font-style: normal;
   font-weight: 400px;
   font-size: 16px;
@@ -1090,7 +1086,7 @@ div.linksCtn div {
 
 /* jumbotron */
 .jumbotronCtn {
-  background-image: url('../Components/images/pngs/extra.png');
+  background-image: url("../Components/images/pngs/extra.png");
   background-size: cover;
   height: 93vh;
   display: flex;
@@ -1101,9 +1097,9 @@ div.linksCtn div {
   background-position: top;
 }
 .textCtn .extra {
-  font-family: 'AbdoMaster-Bold';
+  font-family: "AbdoMaster-Bold";
   font-size: 106px;
-  color: #FFFFFF;
+  color: #ffffff;
   letter-spacing: -1.7px;
   line-height: 114px;
   padding-bottom: 3vh;
@@ -1116,12 +1112,12 @@ div.linksCtn div {
 }
 .belowExtra {
   margin-top: -15vh;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-size: 28px;
   letter-spacing: -1.7px;
-  color: #FFFFFF;
+  color: #ffffff;
   animation: slide-in-from-bottom 0.7s ease-in forwards 0.1s;
 }
 .demoBtn {
@@ -1131,45 +1127,44 @@ div.linksCtn div {
   align-items: center;
   width: 305px;
   height: 56px;
-  background: #416FE6;
+  background: #416fe6;
   border-radius: 8px;
   border: none;
   /* margin-bottom: 10vh; */
   margin-top: 8vh;
-  font-family: 'AbdoMaster-Bold';
+  font-family: "AbdoMaster-Bold";
   font-size: 16px;
   line-height: 24px;
   text-align: center;
   letter-spacing: -0.7px;
-  color: #FFFFFF;
+  color: #ffffff;
   cursor: pointer;
   animation: slide-in-from-bottom 0.7s ease-in forwards 0.3s;
 }
 
 @keyframes slide-in-from-left {
   0% {
-      transform: translateX(-10vw);
+    transform: translateX(-10vw);
   }
   100% {
-      transform: translateX(0vw);
+    transform: translateX(0vw);
   }
 }
 @keyframes slide-in-from-bottom {
   0% {
-      transform: translateY(10vw);
-      opacity: 0;
+    transform: translateY(10vw);
+    opacity: 0;
   }
   100% {
-      transform: translateY(0vw);
-      opacity: 1;
+    transform: translateY(0vw);
+    opacity: 1;
   }
 }
-
 
 /* levels */
 
 .levelCtn {
-  background-color: #232D37;
+  background-color: #232d37;
   height: auto;
   width: 100%;
   min-width: 100vw;
@@ -1183,11 +1178,11 @@ div.linksCtn div {
   padding: 10vh 0;
 }
 .levelCtn > p {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   text-align: center;
   letter-spacing: -0.7px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .levelText {
   /* font-family: 'AbdoMaster-Bold'; */
@@ -1211,14 +1206,14 @@ div.linksCtn div {
   flex-flow: wrap;
 }
 .levelName {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-size: 28px;
   line-height: 34px;
   text-align: center;
   letter-spacing: -1.7px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .levelTypes .img {
   position: relative;
@@ -1226,7 +1221,7 @@ div.linksCtn div {
 }
 .levelTypes:hover .img::before {
   position: absolute;
-  content: '';
+  content: "";
   left: 0;
   top: 0;
   right: 0;
@@ -1238,23 +1233,23 @@ div.linksCtn div {
 
 @keyframes ripple {
   100% {
-      transform: scale(1.2);
-      opacity: 0;
+    transform: scale(1.2);
+    opacity: 0;
   }
 }
 
 @keyframes ripple-body {
   0% {
-      transform: scale(1);
+    transform: scale(1);
   }
   25% {
-      transform: scale(1.01);
+    transform: scale(1.01);
   }
   50% {
-      transform: scale(1.02);
+    transform: scale(1.02);
   }
   100% {
-      transform: scale(1);
+    transform: scale(1);
   }
 }
 
@@ -1264,7 +1259,7 @@ div.linksCtn div {
   min-height: 100vh;
 }
 .bannerCtn {
-  background-image: url('../Components/images/pngs/blurBack.png');
+  background-image: url("../Components/images/pngs/blurBack.png");
   background-size: cover;
   width: 100%;
   min-width: 100vw;
@@ -1275,12 +1270,12 @@ div.linksCtn div {
   padding-left: 3vw;
 }
 .bannerCtn > p {
-  font-family: 'AbdoMaster-Bold';
+  font-family: "AbdoMaster-Bold";
   font-size: 40px;
   line-height: 46px;
   text-align: left;
   letter-spacing: -1.7px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .belowBannerCtn {
   padding: 5vh 10vw;
@@ -1289,11 +1284,11 @@ div.linksCtn div {
   justify-content: flex-start;
   align-items: center;
 }
-.inputCtn select{
+.inputCtn select {
   width: inherit;
   height: 8vh;
   background: rgba(255, 255, 255, 0.15);
-  border: 1.87092px solid #B4B7BB;
+  border: 1.87092px solid #b4b7bb;
   border-radius: 14.9674px;
   padding: 0 1vw;
   padding-right: 6vw;
@@ -1301,13 +1296,13 @@ div.linksCtn div {
   -moz-appearance: none;
   appearance: none;
   outline: none;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 29.9347px;
   line-height: 45px;
   letter-spacing: -1.30964px;
-  color: #FFFFFF;
+  color: #ffffff;
   cursor: pointer;
 }
 .inputCtn {
@@ -1322,12 +1317,12 @@ div.linksCtn div {
   pointer-events: none;
 }
 .popularText {
-  font-family: 'AbdoMaster-Bold';
+  font-family: "AbdoMaster-Bold";
   font-size: 35.045px;
   line-height: 40px;
   text-align: left;
   letter-spacing: -1.48941px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-right: auto;
 }
 
@@ -1337,13 +1332,13 @@ div.linksCtn div {
   border-spacing: 0 1em;
 }
 .table .tableHead {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-size: 24.5315px;
   line-height: 29px;
   letter-spacing: -1.48941px;
-  color: #B4B4B4;
+  color: #b4b4b4;
   margin-left: 7vw;
   /* text-align: center; */
 }
@@ -1352,15 +1347,14 @@ div.linksCtn div {
   width: 30%;
 }
 .table .tableBody {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-size: 21.027px;
   letter-spacing: -1.48941px;
-  color: #FFFFFF;
-  background: #232D37;
+  color: #ffffff;
+  background: #232d37;
   margin-top: 5vh;
-
 }
 .table .tableBody tr {
   margin-top: 5vh;
@@ -1380,12 +1374,266 @@ div.linksCtn div {
   gap: 10px;
 }
 .table .tableBody .textDiv p:last-child {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-size: 21.027px;
-  color: #B4B4B4;
+  color: #b4b4b4;
   margin-top: -1.2vh;
+}
+/* ForFree */
+.hero-text h1 {
+  cursor: pointer;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.hero-button {
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.image-section {
+  cursor: pointer;
+  background-color: #121212;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.heading-container {
+  background-color: #121212;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.heading-container h2 {
+  color: white;
+  font-size: 50px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.letters {
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.hero-button {
+  background-color: black;
+  color: #f4b8a4;
+  font-family: "AbdoMaster-Bold";
+  border: 10px;
+  margin: 60px;
+  padding: 10px 20px;
+  font-size: 10px;
+  cursor: pointer;
+
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 80px;
+  gap: 10px;
+
+  position: flex;
+  width: 315px;
+  height: 56px;
+  left: 0px;
+
+  /* orange/default */
+
+  border: 1px solid #f4b8a4;
+  border-radius: 8px;
+}
+
+.image-container {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  cursor: pointer;
+  max-width: 100%;
+  height: auto;
+}
+
+.ForFree-logo {
+  cursor: pointer;
+  height: 371px;
+  width: 434px;
+  left: 752px;
+  top: 52px;
+  border-radius: 0px;
+}
+
+/* ToEarn */
+.image-text-section {
+  display: grid;
+  cursor: pointer;
+  background-color: #232d37;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.text-container {
+  display: flex;
+  cursor: pointer;
+  background-color: #232d37;
+  flex-direction: column;
+  justify-content: right;
+  align-items: flex-start;
+  gap: 1px;
+  position: absolute;
+  width: 602px;
+  height: 194px;
+  left: 700px;
+}
+
+.text-container h2 {
+  cursor: pointer;
+  color: white;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.bridge {
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.hero-btn {
+  background-color: black;
+  font-family: "AbdoMaster-Bold";
+  color: #f4b8a4;
+  border-style: dashed;
+  border: 10px;
+  margin: 60px;
+  padding: 10px 20px;
+  font-size: 10px;
+  cursor: pointer;
+
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 80px;
+  gap: 10px;
+
+  position: flex;
+  width: 315px;
+  height: 56px;
+  left: 0px;
+
+  border: 1px solid #f4b8a4;
+  border-radius: 8px;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: flex;
+  width: 434px;
+  height: 400px;
+  left: 140px;
+}
+
+.img-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.ToEarn-logo {
+  height: 371px;
+  width: 434px;
+  left: 752px;
+  top: 52px;
+  border-radius: 0px;
+}
+/* readytoplay */
+.ready-to-play-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 60vh;
+  background-image: url(../Components/images/pngs/ReadyToStartPlay.png);
+  /*background: linear-gradient(to bottom, #007bff, #0000ff);*/
+  background-size: cover;
+
+  /*background-image: url(./ReadyToStartPlay.png);*/
+}
+
+.ready-to-play-header {
+  font-size: 34px;
+  margin-bottom: 16px;
+  color: #ffffff;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text {
+  font-size: 20px;
+  margin-bottom: 70px;
+  color: #ffffff;
+}
+
+.hero-boton {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+
+  width: 378px;
+  height: 56px;
+  left: 532px;
+}
+
+.hero-boton:hover {
+  background-color: #0056b3;
 }
 
 /* stages */
@@ -1398,22 +1646,22 @@ div.linksCtn div {
   justify-content: flex-start;
   align-items: center;
 }
-.stageTextCtn p:first-child{
-  font-family: 'AbdoMaster-Bold';
+.stageTextCtn p:first-child {
+  font-family: "AbdoMaster-Bold";
   font-size: 40px;
   text-align: center;
   letter-spacing: -1.7px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 0;
 }
-.stageTextCtn p:last-child{
-  font-family: 'Inter';
+.stageTextCtn p:last-child {
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   text-align: center;
   letter-spacing: -0.7px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .stageDiv {
   display: flex;
@@ -1439,18 +1687,84 @@ div.linksCtn div {
   align-items: center;
   padding: 12px 20px;
   cursor: pointer;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
   text-align: center;
   letter-spacing: -0.7px;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 0.45;
 }
 .stageDiv .stages:first-child {
   opacity: 1;
+}
+
+.about-us-container {
+  max-width: 2000px;
+  margin: 50 auto;
+  padding: 30px 10px;
+  background-color: black;
+}
+
+.about-us-header {
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.about-us-container p {
+  font-size: 24px;
+  color: white;
+  text-align: center;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  position: flex;
+  left: 0%;
+  right: 0%;
+  max-width: 300px;
+  bottom: 0%;
+
+  background: #232d37;
+  border-radius: 20px;
+}
+
+.card-image {
+  width: 50%;
+  height: 100px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-header {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.card-text {
+  font-size: 12px;
+  line-height: 1.5;
+  color: white;
+  text-align: center;
 }
 
 /* levels */
@@ -1469,18 +1783,18 @@ div.linksCtn div {
 .levelDiv > div {
   width: inherit;
   min-width: 100%;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
   letter-spacing: -1.7px;
-  color: #FDF3F0;
+  color: #fdf3f0;
   margin-bottom: 4vh;
 }
 .levelDiv > div > div {
   width: 100%;
   height: 135px;
-  background: #232D37;
+  background: #232d37;
   border-radius: 8px;
   display: flex;
   flex-direction: row;
@@ -1488,17 +1802,18 @@ div.linksCtn div {
   align-items: center;
   padding: 12px 20px;
   cursor: pointer;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
   text-align: center;
   letter-spacing: -0.7px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-top: 0;
 }
-.levelPeriDiv, .periDiv {
+.levelPeriDiv,
+.periDiv {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1506,19 +1821,18 @@ div.linksCtn div {
 }
 .periDiv {
   /* flex-basis: 10%; */
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-size: 27px;
   letter-spacing: -1.7px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .levelPeriDiv > div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  
 }
 .levelPeriDiv {
   flex-basis: 30%;
@@ -1528,13 +1842,13 @@ div.linksCtn div {
   margin-bottom: 0;
 }
 .levelPeriDiv p {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
   letter-spacing: -1.7px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 button.playBtn {
   display: flex;
@@ -1545,15 +1859,57 @@ button.playBtn {
   gap: 10px;
   width: 165px;
   height: 56px;
-  background: #416FE6;
+  background: #416fe6;
   border-radius: 8px;
   border: none;
   cursor: pointer;
-  font-family: 'AbdoMaster-Bold';
+  font-family: "AbdoMaster-Bold";
   font-size: 16px;
   text-align: center;
   letter-spacing: -0.7px;
-  color: #FFFFFF;
+  color: #ffffff;
+}
+
+.token {
+  color: #fff;
+  background-color: #121212;
+  border: 1px solid #3459b8;
+  width: 186px;
+  border-radius: 8px;
+  height: 46px;
+  outline: none;
+  text-align: center;
+}
+
+.community {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.socialHandles {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 194px;
+  height: 262.12px;
+  padding: 1rem;
+  background-color: #232d37;
+  border-radius: 14.8092px;
+  border: 0.740458px solid #000000;
+}
+
+.socialHandles a {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.5rem;
+  color: #fff;
+  background-color: #232d37;
+  border-bottom: 0.5px solid #fff;
 }
 
 @media (max-width: 600px) {
