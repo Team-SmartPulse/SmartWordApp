@@ -7,7 +7,7 @@ import axios from "axios";
 const arr = [];
 
 //Game integration
-export default async function Game() {
+export default function Game() {
   const [score, setScore] = useState(0);
   const [word, setWord] = useState("");
   const [wordArr, setWordArr] = useState([]);
