@@ -699,6 +699,200 @@ button.playBtn {
   color: #FFFFFF;
 }
 
+/* market index */
+.marketCtn {
+  height: 100%;
+  min-height: 100vh;
+  background-color: #121212;
+}
+.marketJumboCtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15vw;
+  /* gap: 5vw; */
+}
+.marketJumboCtn > div > p.marketText {
+  font-family: 'AbdoMaster-Bold';
+  font-size: 90.5163px;
+  line-height: 102px;
+  letter-spacing: -1.60289px;
+  color: #FFFFFF;
+  margin-bottom: 0;
+}
+p.belowMarketText {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26.4006px;
+  line-height: 32px;
+  letter-spacing: -1.60289px;
+  color: #FFFFFF;
+  margin-top: 0;
+}
+div.buttonsCtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3vw;
+}
+div.buttonsCtn button{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 7.54302px 15.086px;
+  gap: 9.43px;
+  border: none;
+  width: 175.38px;
+  height: 53.17px;
+  font-family: 'AbdoMaster-Bold';
+  font-size: 15.086px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: -0.660014px;
+  color: #FFFFFF;
+  background: #3459B8;
+  cursor: pointer;
+  border-radius: 7.54302px;
+}
+.webIcon {
+  width: 30vw
+}
+.belowJumboCtn {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 10vh;
+}
+.belowJumboCtn .statsCtn{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3vw;
+  text-align: center;
+  margin-top: 10vh;
+}
+.belowJumboCtn .statsCtn > div p:first-child {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21.561px;
+  line-height: 26px;
+  /* identical to box height, or 120% */
+text-align: center;
+  display: flex;
+  align-items: center;
+  letter-spacing: -1.30906px;
+
+  /* White/900 */
+
+  color: #B4B4B4;
+}
+.statsCtn > div > p .coinIconCtn {
+  width: 43px;
+  height: 43px
+} 
+.belowJumboCtn .statsCtn > div p:last-child {
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 40.5854px;
+line-height: 43px;
+display: flex;
+align-items: center;
+letter-spacing: -2.1561px;
+margin-top: 0;
+/* White/default */
+
+color: #FFFFFF;
+}
+.startersCtn {
+  background: #232D37;
+  border-radius: 7.70036px;
+  width: 70%;
+  height: auto;
+  min-height: 30vh;
+   position: relative;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 5vh;
+   padding: 7vh 0;
+}
+.startersCtn .absCtn {
+  position: absolute;
+  /* top: 0; */
+  width: 203.29px;
+  height: 72.31px;
+  left: calc(50% - 203.29px/2 - 13px);
+  top: -5vh;
+  background: #ED8564;
+  border-radius: 33.1115px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: 'AbdoMaster-Bold';
+  font-size: 30.8014px;
+  line-height: 35px;
+  /* identical to box height, or 115% */
+
+  text-align: center;
+  letter-spacing: -1.30906px;
+  color: #FAF8F8;
+}
+.startersCtn .flexCtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; 
+  padding: 0 7vw;
+}
+.arrowPointCtn {
+  cursor: pointer;
+}
+.midStatCtn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24.6412px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -1.30906px;
+  color: #FFFFFF;
+}
+.midStatCtn .tinyCtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; 
+  gap: 20px;
+}
+.midStatCtn .tinyCtn > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+.beforeTinyCtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  margin: 3vh 0 5vh;
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
