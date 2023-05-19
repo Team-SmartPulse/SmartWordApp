@@ -13,7 +13,7 @@ import Coins from "../../Components/images/pngs/coins.png";
 import Tiny1 from "../../Components/images/pngs/tiny1.png";
 import Tiny2 from "../../Components/images/pngs/tiny2.png";
 import Tiny3 from "../../Components/images/pngs/tiny3.png";
-import Discover from "../../pages/Marketplace/discover";
+import Discover from "../../Components/Discover";
 
 const Market: React.FC = () => {
   return (
