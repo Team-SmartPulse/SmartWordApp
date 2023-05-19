@@ -8,7 +8,7 @@ const marketPlace = () => {
         <MarketPlaceHeader />
         <Footer />
     </div>
-  )
-}
+
+)}
 
 export default marketPlace

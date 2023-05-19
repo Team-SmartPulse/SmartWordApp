@@ -22,6 +22,7 @@
   margin: 0;
   padding-top: 5rem;
   font-family: AbdoMaster-Bold;
+  font-family: AbdoMaster-Bold ;
   font-size: 40px;
   line-height: 46px;
   letter-spacing: -1.7px;
@@ -37,6 +38,7 @@
 
 .linksCtn > a {
   font-family: "Inter";
+  /* font-family: 'Inter'; */
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -94,6 +96,7 @@ div.linksCtn div {
 }
 .footerCtn {
   background-color: #000c28;
+  background-color: #000C28;
   height: auto;
   padding: 6vh 8vw 10vh 3vw;
   text-align: center;
@@ -119,12 +122,18 @@ div.linksCtn div {
 }
 .linksDiv p.linkHeader {
   font-family: "Inter";
+}
+.linksDiv p.linkHeader{
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
 }
 .linksDiv p.links {
   font-family: "Inter";
+}
+.linksDiv p.links{
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -141,6 +150,7 @@ div.linksCtn div {
 .copyDiv {
   margin-top: 7vh;
   font-family: "Inter";
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -175,6 +185,7 @@ div.linksCtn div {
 .description {
   margin: 0 auto;
   font-family: inter;
+  font-family:inter ;
   font-style: normal;
   font-weight: 400px;
   font-size: 16px;
@@ -236,6 +247,7 @@ div.linksCtn div {
   justify-content: center;
   padding-top: 5rem;
   padding-bottom: 4rem;
+  
 }
 
 .members {
@@ -250,6 +262,11 @@ div.linksCtn div {
 
 .memberName {
   font-family: inter;
+  margin-bottom:1rem;
+}
+
+.memberName{
+  font-family:inter ;
   font-style: normal;
   font-weight: 700px;
   font-size: 18px;
@@ -261,6 +278,12 @@ div.linksCtn div {
 }
 .memberRole {
   font-family: inter;
+  margin-top: 0; 
+  margin-bottom: 5px;
+
+}
+.memberRole{
+  font-family:inter ;
   font-style: normal;
   font-weight: 400px;
   font-size: 16px;
@@ -269,6 +292,9 @@ div.linksCtn div {
   text-align: center;
   margin-top: 0;
   margin-bottom: 5px;
+  margin-top: 0; 
+  margin-bottom: 5px;
+
 }
 .imgCtn {
   background: #fff url(../Components/images/pngs/mary.png) no-repeat center;
@@ -298,6 +324,7 @@ div.linksCtn div {
   width: 360px;
   height: 360px;
   padding-top: 2rem;
+
 }
 .favour {
   background: #fff url(../Components/images/pngs/favour.png) no-repeat center;
@@ -306,6 +333,7 @@ div.linksCtn div {
   width: 360px;
   height: 360px;
   padding-top: 2rem;
+
 }
 .idy {
   background: #fff url(../Components/images/pngs/idy.png) no-repeat center;
@@ -314,6 +342,7 @@ div.linksCtn div {
   width: 360px;
   height: 360px;
   padding-top: 2rem;
+
 }
 .shellyna {
   background: #fff url(../Components/images/pngs/shellyna.png) no-repeat center;
@@ -322,6 +351,7 @@ div.linksCtn div {
   width: 360px;
   height: 360px;
   padding-top: 2rem;
+
 }
 .dunnie {
   background: #fff url(../Components/images/pngs/dunnie.png) no-repeat center;
@@ -330,6 +360,7 @@ div.linksCtn div {
   width: 360px;
   height: 360px;
   padding-top: 2rem;
+
 }
 .folasewa {
   background: #fff url(../Components/images/pngs/folasewa.png) no-repeat center;
@@ -854,6 +885,7 @@ div.linksCtn div {
 
 .congrats {
   margin: 0 auto;
+padding-bottom: 3rem;
 }
 
 @media (max-width: 600px) {

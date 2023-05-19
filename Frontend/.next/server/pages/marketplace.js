@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*
  * ATTENTION: An "eval-source-map" devtool has been used.
  * This devtool is neither made for production nor for readable output files.
@@ -676,10 +677,46 @@ module.exports = require("next/dist/shared/lib/utils.js");
 /***/ ((module) => {
 
 "use strict";
+=======
+"use strict";
+(() => {
+var exports = {};
+exports.id = 465;
+exports.ids = [465];
+exports.modules = {
+
+/***/ 9877:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6689);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+
+
+const marketPlace = ()=>{
+    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+        children: "marketPlace"
+    });
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (marketPlace);
+
+
+/***/ }),
+
+/***/ 6689:
+/***/ ((module) => {
+
+>>>>>>> origin/divine
 module.exports = require("react");
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "react-icons/fa":
 /*!*********************************!*\
   !*** external "react-icons/fa" ***!
@@ -721,6 +758,12 @@ module.exports = require("react/jsx-dev-runtime");
 
 "use strict";
 module.exports = import("@rainbow-me/rainbowkit");;
+=======
+/***/ 997:
+/***/ ((module) => {
+
+module.exports = require("react/jsx-runtime");
+>>>>>>> origin/divine
 
 /***/ })
 
@@ -731,7 +774,11 @@ module.exports = import("@rainbow-me/rainbowkit");;
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
+<<<<<<< HEAD
 var __webpack_exports__ = (__webpack_exec__("./pages/marketplace.tsx"));
+=======
+var __webpack_exports__ = (__webpack_exec__(9877));
+>>>>>>> origin/divine
 module.exports = __webpack_exports__;
 
 })();
