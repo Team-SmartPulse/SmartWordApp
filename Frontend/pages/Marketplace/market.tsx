@@ -5,7 +5,7 @@ import styles from "../../styles/Home.module.css";
 import Dropdown from "../../Components/images/pngs/discArrowDown.png";
 import Send from "../../Components/images/pngs/Send.png";
 import Plus from "../../Components/images/pngs/PlusIcon.png";
-import WebIcon from "../../Components/images/pngs/Web3Icon.png";
+import WebIcon from "../../Components/images/pngs/web3Icon.png";
 import Coin from "../../Components/images/pngs/discCoin.png";
 import ArrowLeft from "../../Components/images/pngs/toLeftArrow.png";
 import ArrowRight from "../../Components/images/pngs/toRightArrow.png";
