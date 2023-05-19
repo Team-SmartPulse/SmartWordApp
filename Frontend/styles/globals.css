@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Inter:400,500,600,700&display=swap');
 
+<<<<<<< HEAD
 html,
 body {
   padding: 0;
@@ -16,11 +17,13 @@ a {
 * {
   box-sizing: border-box;
 }
+=======
+>>>>>>> 5095bb57607724c0afdd87d27d7e9c1572237ffe
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: 'Inter', BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
