@@ -14,6 +14,7 @@ import Tiny1 from "../../Components/images/pngs/tiny1.png";
 import Tiny2 from "../../Components/images/pngs/tiny2.png";
 import Tiny3 from "../../Components/images/pngs/tiny3.png";
 import Discover from "../../Components/Discover";
+import Shop from "../../Components/Shop";
 
 const Market: React.FC = () => {
   return (
@@ -21,49 +22,49 @@ const Market: React.FC = () => {
       <div className={styles.marketJumboCtn}>
         <div>
           <p className={styles.marketText}>
-            Collect The Awesome Extaordinary NFTs
+            Collect extraordinary SmartWord NFTs
           </p>
           <p className={styles.belowMarketText}>
-            Digital marketplace for crypto collectibles and non-fungible tokens,
-            NFTs
+            Digital items for SmartWord — characters, power-ups, and letter
+            packs, priced in SWD.
           </p>
           <div className={styles.buttonsCtn}>
             <Link href="/Marketplace/discover">
               <button>
-                <Image src={Send} />
+                <Image src={Send} alt="Discover" />
                 <span>Discover</span>
               </button>
             </Link>
-            <Link href="/">
+            <Link href="#create">
               <button>
-                <Image src={Plus} />
+                <Image src={Plus} alt="Create" />
                 <span>Create New</span>
               </button>
             </Link>
           </div>
         </div>
         <div className={styles.webIcon}>
-          <Image src={WebIcon} />
+        <Image src={WebIcon} alt="Web3" />
         </div>
       </div>
       <div className={styles.belowJumboCtn}>
         <div className={styles.statsCtn}>
           <div>
-            <p>Total Supply</p>
-            <p>27865</p>
+            <p>SWD shop</p>
+            <p>9 items</p>
           </div>
           <div>
             <p>Floor Price</p>
             <p>
               <span className={styles.coinIconCtn}>
-                <Image src={Coin} />
+                <Image src={Coin} alt="coin" />
               </span>
-              200
+              On-chain
             </p>
           </div>
           <div>
-            <p>Highest (24H)</p>
-            <p>27865</p>
+            <p>Boosters</p>
+            <p>Hint · Life · Star · Theme</p>
           </div>
         </div>
         <div className={styles.startersCtn}>
@@ -101,6 +102,7 @@ const Market: React.FC = () => {
           </div>
         </div>
         <Discover />
+        <Shop />
       </div>
     </div>
   );

@@ -1,8 +1,9 @@
 import React from "react";
-import {FaPlay} from "react-icons/fa";
+import { FaPlay } from "react-icons/fa";
+import Link from "next/link";
 import styles from "../styles/Home.module.css";
 import Image from "next/image";
-import ForFree from "../Components/images/pngs/ForFree.png"
+import ForFree from "../Components/images/pngs/ForFree.png";
 
 function PlayforFree() {
   return (
@@ -11,14 +12,17 @@ function PlayforFree() {
         <h2>Play for Free</h2>
         <p className={styles["letters"]}>
           Enjoy the best and most fun gaming experience when you play games for
-          free.
+          free. Progress is saved on this device — no wallet required.
         </p>
-        <button className={styles["hero-button"]}><FaPlay />Play for Free</button>
-        
-        
+        <Link href="/Game/level?mode=free">
+          <button className={styles["hero-button"]}>
+            <FaPlay />
+            Play for Free
+          </button>
+        </Link>
       </div>
       <div className={styles["image-container"]}>
-        <Image src={ForFree} className={styles["ForFree-logo"]} alt="img" />
+        <Image src={ForFree} className={styles["ForFree-logo"]} alt="Play for free" />
       </div>
     </div>
   );

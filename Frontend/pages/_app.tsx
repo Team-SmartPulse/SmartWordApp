@@ -1,25 +1,31 @@
-import '../styles/globals.css';
-import '@rainbow-me/rainbowkit/styles.css';
-import { getDefaultWallets, RainbowKitProvider } from '@rainbow-me/rainbowkit';
-import type { AppProps } from 'next/app';
-import { configureChains, createConfig, WagmiConfig } from 'wagmi';
-import {  goerli } from 'wagmi/chains';
-import { publicProvider } from 'wagmi/providers/public';
-import { celo, celoAlfajores } from 'viem/chains';
-import {infuraProvider} from 'wagmi/providers/infura'
+import "../styles/globals.css";
+import "@rainbow-me/rainbowkit/styles.css";
+import { getDefaultWallets, RainbowKitProvider } from "@rainbow-me/rainbowkit";
+import type { AppProps } from "next/app";
+import { configureChains, createConfig, WagmiConfig } from "wagmi";
+import { celo } from "viem/chains";
+import { publicProvider } from "wagmi/providers/public";
+import { jsonRpcProvider } from "wagmi/providers/jsonRpc";
+import { celoSepolia } from "../lib/chains";
+
 const { chains, publicClient, webSocketPublicClient } = configureChains(
+  [celoSepolia, celo],
   [
-    celoAlfajores,
-    celo,
-  ],
-  [infuraProvider({ apiKey: '22ac6fb2115642d39311d9e2072bc13e'}),
-  publicProvider()
-]
+    jsonRpcProvider({
+      rpc: (chain) => ({
+        http:
+          chain.id === celo.id
+            ? "https://forno.celo.org"
+            : "https://forno.celo-sepolia.celo-testnet.org",
+      }),
+    }),
+    publicProvider(),
+  ]
 );
 
 const { connectors } = getDefaultWallets({
-  appName: 'Smart Word App',
-  projectId: 'YOUR_PROJECT_ID',
+  appName: "Smart Word",
+  projectId: process.env.NEXT_PUBLIC_WC_PROJECT_ID || "smartword-dev-placeholder",
   chains,
 });
 

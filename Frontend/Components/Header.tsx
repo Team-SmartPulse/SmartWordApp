@@ -9,23 +9,25 @@ export const Header: React.FC = () => {
   return (
     <div className={styles.headerCtn}>
       <div className={styles.logoCtn}>
-        <Image src={smartWordLogo} alt="Logo" />
+        <Link href="/">
+          <Image src={smartWordLogo} alt="Logo" />
+        </Link>
       </div>
       <div className={styles.linksCtn}>
         <Link href="/" className={styles.linkTags}>
           Home
         </Link>
-        <Link href="/Game" className={styles.linkTags}>
+        <Link href="/Game/level" className={styles.linkTags}>
           Games
         </Link>
         <Link href="/Marketplace" className={styles.linkTags}>
           Marketplace
         </Link>
-        <Link href="/team" className={styles.linkTags}>
-          Team
+        <Link href="/leaderboard" className={styles.linkTags}>
+          Leaderboard
         </Link>
-        <Link href="/community" className={styles.linkTags}>
-          Community
+        <Link href="/wallet" className={styles.linkTags}>
+          Wallet
         </Link>
       </div>
       <div className="btn-div">

@@ -25,7 +25,7 @@ const Discover: React.FC = () => {
                 <tr className={styles.tableRow}>
                     <td>
                         <div className="icon-div">
-                            <Image src={fourthIcon} />
+            <Image src={fourthIcon} alt="WordPlay" />
                         </div>
                         <div className={styles.textDiv}>
                             <p>WordPlay</p>
@@ -33,7 +33,7 @@ const Discover: React.FC = () => {
                         </div>
                     </td>
                     <td>
-                        <Image src={Coin} />
+                        <Image src={Coin} alt="chain" />
                     </td>
                     <td>10d 0h 0m ago</td>
                     <td>$0.00(0%)</td>
@@ -41,7 +41,7 @@ const Discover: React.FC = () => {
                 <tr className={styles.tableRow}>
                     <td>
                         <div className="icon-div">
-                            <Image src={thirdIcon} />
+                            <Image src={thirdIcon} alt="Hint Box" />
                         </div>
                         <div className={styles.textDiv}>
                             <p>Hint Box</p>
@@ -49,7 +49,7 @@ const Discover: React.FC = () => {
                         </div>
                     </td>
                     <td>
-                        <Image src={Coin} />
+                        <Image src={Coin} alt="chain" />
                     </td>
                     <td>10d 0h 0m ago</td>
                     <td>$0.00(0%)</td>
@@ -57,7 +57,7 @@ const Discover: React.FC = () => {
                 <tr className={styles.tableRow}>
                     <td>
                         <div className={styles.iconDiv}>
-                            <Image src={firstIcon} />
+                            <Image src={firstIcon} alt="Puzzle Theme" />
                         </div>
                         <div className={styles.textDiv}>
                             <p>Puzzle Theme</p>
@@ -65,7 +65,7 @@ const Discover: React.FC = () => {
                         </div>
                     </td>
                     <td>
-                        <Image src={Coin} />
+                        <Image src={Coin} alt="chain" />
                     </td>
                     <td>10d 0h 0m ago</td>
                     <td>$0.00(0%)</td>
@@ -74,7 +74,7 @@ const Discover: React.FC = () => {
                 <tr className={styles.tableRow}>
                     <td>
                         <div className={styles.iconDiv}>
-                            <Image src={secondIcon} />
+                            <Image src={secondIcon} alt="Word Match" />
                         </div>
                         <div className={styles.textDiv}>
                             <p>Word Match</p>
@@ -82,7 +82,7 @@ const Discover: React.FC = () => {
                         </div>
                     </td>
                     <td>
-                        <Image src={Coin} />
+                        <Image src={Coin} alt="chain" />
                     </td>
                     <td>10d 0h 0m ago</td>
                     <td>$0.00(0%)</td>
@@ -91,7 +91,7 @@ const Discover: React.FC = () => {
                 <tr className={styles.tableRow}>
                     <td>
                         <div className={styles.iconDiv}>
-                            <Image src={fifthIcon} />
+                            <Image src={fifthIcon} alt="Crypto Puzzles" />
                         </div>
                         <div className={styles.textDiv}>
                             <p>Crypto Puzzles</p>
@@ -99,7 +99,7 @@ const Discover: React.FC = () => {
                         </div>
                     </td>
                     <td>
-                        <Image src={Coin} />
+                        <Image src={Coin} alt="chain" />
                     </td>
                     <td>10d 0h 0m ago</td>
                     <td>$0.00(0%)</td>
