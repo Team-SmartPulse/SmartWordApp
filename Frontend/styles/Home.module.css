@@ -2112,3 +2112,638 @@ color: #FFFFFF;
     flex-direction: column;
   }
 }
+
+.stageUnlocked {
+  opacity: 1 !important;
+  border: 1px solid #416fe6;
+}
+
+.headerRight {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.smcBadge {
+  color: #fdf3f0;
+  background: #232d37;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-weight: 700;
+}
+
+.profileGrid,
+.shopGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  width: 90%;
+  margin: 24px auto;
+}
+
+.profileCard,
+.shopCard,
+.shopCardActive {
+  background: #232d37;
+  border-radius: 12px;
+  padding: 16px;
+  color: #fff;
+  text-align: left;
+}
+
+.shopCardActive {
+  border: 2px solid #416fe6;
+}
+
+.shopCtn,
+.supportBody,
+.shopBanner {
+  width: 90%;
+  margin: 24px auto 48px;
+  color: #fff;
+}
+
+.listForm {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 16px 0 32px;
+}
+
+.listForm input {
+  background: #121212;
+  color: #fff;
+  border: 1px solid #416fe6;
+  border-radius: 8px;
+  padding: 10px 12px;
+}
+
+.supportBody h3 {
+  margin-top: 24px;
+}
+
+.shopBanner {
+  background: #232d37;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.nftGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.nftCard,
+.nftCardActive {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 0;
+  padding: 12px;
+  text-align: left;
+  color: #fff;
+  background: #1b2430;
+  border: 1px solid rgba(142, 169, 240, 0.16);
+  border-radius: 16px;
+  cursor: pointer;
+  font-family: Inter, sans-serif;
+}
+
+.nftCardActive {
+  border-color: #416fe6;
+  box-shadow: 0 0 0 2px rgba(65, 111, 230, 0.35);
+}
+
+.nftArtWrap {
+  aspect-ratio: 1;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #121826;
+}
+
+.nftArt,
+.nftDetailArt {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.nftCard h3,
+.nftDetail h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.nftType,
+.nftBlurb {
+  margin: 0;
+  color: #b4b7bb;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.nftBlurb {
+  min-height: 2.8em;
+}
+
+.nftDetail {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 20px;
+  align-items: center;
+  margin: 8px 0 24px;
+  padding: 16px;
+  background: #1b2430;
+  border: 1px solid rgba(142, 169, 240, 0.16);
+  border-radius: 16px;
+}
+
+.nftDetailArt {
+  width: 140px;
+  height: 140px;
+  border-radius: 12px;
+}
+
+.swdExplain {
+  margin-bottom: 24px;
+  padding: 20px 24px;
+  background: rgba(35, 45, 55, 0.82);
+  border: 1px solid rgba(142, 169, 240, 0.12);
+  border-radius: 16px;
+}
+
+.swdExplain h2 {
+  margin: 0 0 8px;
+  font-size: 18px;
+}
+
+.swdExplain p,
+.swdExplain li {
+  color: #d5d8e0;
+  line-height: 1.55;
+}
+
+.swdExplain a {
+  color: #8ea9f0;
+  font-weight: 600;
+}
+
+.resultFormula {
+  margin: 8px 0 0;
+  color: #8ea9f0;
+  font-size: 14px;
+}
+
+@media (max-width: 640px) {
+  .nftDetail {
+    grid-template-columns: 1fr;
+  }
+}
+
+.notFoundPage {
+  min-height: 100vh;
+  background: #121212;
+  display: flex;
+  flex-direction: column;
+}
+
+.notFoundMain {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 80px 24px 120px;
+  color: #fff;
+}
+
+.notFoundCode {
+  margin: 0;
+  font-family: "AbdoMaster-Bold", Inter, sans-serif;
+  font-size: clamp(72px, 16vw, 160px);
+  line-height: 1;
+  letter-spacing: -6px;
+  color: #416fe6;
+}
+
+.notFoundTitle {
+  margin: 12px 0 8px;
+  font-size: clamp(24px, 4vw, 40px);
+}
+
+.notFoundText {
+  max-width: 480px;
+  color: #b4b7bb;
+  line-height: 1.6;
+}
+
+.notFoundActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 28px;
+}
+
+.hudBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: min(720px, 92vw);
+  color: #fff;
+  margin: 16px auto 8px;
+}
+
+.timerTrack {
+  width: min(720px, 92vw);
+  height: 8px;
+  background: #232d37;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.timerFill {
+  height: 100%;
+  background: #416fe6;
+}
+
+.timerLabel,
+.gameAlert {
+  color: #f1a48b;
+  text-align: center;
+}
+
+.bonusRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.foundChip {
+  background: #232d37;
+  color: #fff;
+  border-radius: 999px;
+  padding: 4px 10px;
+  text-transform: uppercase;
+}
+
+.resultCard {
+  max-width: 560px;
+  margin: 24px auto;
+  background: #232d37;
+  color: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  text-align: center;
+}
+
+.resultScore {
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.walletPage {
+  min-height: 100vh;
+  background: #121212;
+  color: #fff;
+  padding-bottom: 48px;
+}
+
+.walletSection,
+.historyList {
+  width: 90%;
+  margin: 32px auto;
+}
+
+.historyRow {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid #232d37;
+}
+
+.txBanner {
+  width: min(720px, 92vw);
+  margin: 12px auto;
+  padding: 12px 16px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.txPending {
+  background: #2b3a67;
+  color: #fff;
+}
+
+.txSuccess {
+  background: #1f6f4a;
+  color: #fff;
+}
+
+.txError {
+  background: #7a2e2e;
+  color: #fff;
+}
+
+.rarity {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #8ea9f0;
+  font-size: 12px;
+}
+
+.walletShell {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top right, rgba(65, 111, 230, 0.18), transparent 32%),
+    linear-gradient(180deg, #0b0f18 0%, #121826 100%);
+  color: #f5f7fb;
+}
+
+.walletMain {
+  width: min(1120px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 32px 0 72px;
+}
+
+.walletHero {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+
+.walletEyebrow {
+  margin: 0 0 8px;
+  color: #8ea9f0;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.walletHero h1 {
+  margin: 0;
+  font-size: clamp(32px, 5vw, 48px);
+  letter-spacing: -1.4px;
+}
+
+.walletLead {
+  margin: 8px 0 0;
+  max-width: 520px;
+  color: #b4b7bb;
+  line-height: 1.6;
+}
+
+.walletHeroActions,
+.walletActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.walletConnectCard,
+.walletStat,
+.walletPanel,
+.walletNftCard {
+  background: rgba(35, 45, 55, 0.82);
+  border: 1px solid rgba(142, 169, 240, 0.12);
+  border-radius: 16px;
+}
+
+.walletConnectCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 24px;
+  margin-bottom: 24px;
+}
+
+.walletConnectCard h2 {
+  margin: 0 0 6px;
+  font-size: 20px;
+}
+
+.walletConnectCard p {
+  margin: 0;
+  color: #b4b7bb;
+}
+
+.walletStats {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.walletStat {
+  padding: 18px 16px 16px;
+  min-height: 132px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.walletStatAccent {
+  border-color: rgba(65, 111, 230, 0.55);
+  box-shadow: 0 0 0 1px rgba(65, 111, 230, 0.2);
+}
+
+.walletStatIcon {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: rgba(65, 111, 230, 0.16);
+  color: #8ea9f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.walletStatLabel {
+  color: #9aa3b5;
+  font-size: 13px;
+}
+
+.walletStat strong {
+  font-size: 24px;
+  letter-spacing: -0.6px;
+}
+
+.walletProgress {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+.walletProgressItem {
+  background: rgba(18, 24, 38, 0.8);
+  border-radius: 12px;
+  padding: 14px 16px;
+}
+
+.walletProgressHead {
+  display: flex;
+  justify-content: space-between;
+  color: #d5d8e0;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.walletProgressTrack {
+  height: 8px;
+  background: #232d37;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.walletProgressFill {
+  height: 100%;
+  background: linear-gradient(90deg, #416fe6, #8ea9f0);
+}
+
+.walletActions {
+  margin-bottom: 28px;
+}
+
+.walletPrimaryBtn,
+.walletSecondaryBtn,
+.walletGhostBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 48px;
+  padding: 0 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-family: Inter, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.walletPrimaryBtn {
+  background: #416fe6;
+}
+
+.walletPrimaryBtn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.walletSecondaryBtn,
+.walletGhostBtn {
+  background: transparent;
+  border: 1px solid rgba(142, 169, 240, 0.35);
+}
+
+.walletPanels {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.walletPanel {
+  padding: 20px;
+}
+
+.walletPanelHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.walletPanelHead h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.walletPanelHead a,
+.walletEmpty a {
+  color: #8ea9f0;
+  font-weight: 600;
+}
+
+.walletEmpty {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 28px 8px;
+  color: #d5d8e0;
+}
+
+.walletEmpty span,
+.walletMuted {
+  color: #9aa3b5;
+}
+
+.walletTableRow,
+.walletNftCard {
+  padding: 12px 0;
+}
+
+.walletTableRow {
+  display: grid;
+  grid-template-columns: 1.4fr 0.8fr 0.8fr;
+  gap: 12px;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.walletTableRow div {
+  display: flex;
+  flex-direction: column;
+}
+
+.walletTableRow span,
+.walletNftCard p {
+  color: #b4b7bb;
+}
+
+.walletPositive {
+  color: #7ad0c5;
+}
+
+.walletNftGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 12px;
+}
+
+.walletNftCard {
+  padding: 14px;
+}
+
+@media (max-width: 980px) {
+  .walletStats,
+  .walletProgress,
+  .walletPanels {
+    grid-template-columns: 1fr;
+  }
+
+  .walletHero,
+  .walletConnectCard {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+
+
+

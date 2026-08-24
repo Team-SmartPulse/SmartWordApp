@@ -1,4 +1,3 @@
-// import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../styles/Home.module.css";
@@ -7,39 +6,28 @@ import smartWordLogo from "./images/pngs/smart-word-logo.png";
 
 const MarketPlaceHeader = () => {
   return (
-    <>
-      <div className={styles.headerCtn}>
-        <div className={styles.logoCtn}>
-          <Image src={smartWordLogo} alt="Logo" />
-        </div>
-        <div className={styles.linksCtn}>
-          <Link href="/">
-            <a className={styles.linkTags}>Home</a>
-          </Link>
-          <Link href="/games">
-            <a className={styles.linkTags}>Games</a>
-          </Link>
-          <Link href="/Marketplace">
-            <a className={styles.linkTags}>Marketplace</a>
-          </Link>
-          <Link href="/team">
-            <a className={styles.linkTags}>Team</a>
-          </Link>
-          <div>
-            <select className={styles.token}>
-              <option disabled selected>Buy Token</option>
-              <option value="smartCoinSwap">SmartCoin Swap</option>
-              <option value="uniswap">Uniswap</option>
-              <option value="coinmarketcap">
-                CoinMarketCap
-              </option>
-              <option value="metaverse">Metaverse</option>
-            </select>
-          </div>
-          <ConnectButton />
-        </div>
+    <div className={styles.headerCtn}>
+      <div className={styles.logoCtn}>
+        <Link href="/">
+          <Image src={smartWordLogo} alt="Smart Word logo" />
+        </Link>
       </div>
-    </>
+      <div className={styles.linksCtn}>
+        <Link href="/" className={styles.linkTags}>
+          Home
+        </Link>
+        <Link href="/Game/level" className={styles.linkTags}>
+          Games
+        </Link>
+        <Link href="/Marketplace" className={styles.linkTags}>
+          Marketplace
+        </Link>
+        <Link href="/wallet" className={styles.linkTags}>
+          Wallet
+        </Link>
+        <ConnectButton />
+      </div>
+    </div>
   );
 };
 

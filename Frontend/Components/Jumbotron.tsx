@@ -11,7 +11,7 @@ const Jumbotron: React.FC = () => {
         <div className={styles.textCtn}>
             <p className={styles.extra}>Extraordinary Creative Puzzle <br /><span>Games</span></p>
             <p className={styles.belowExtra}>Start winning with the most exclusive crypto</p>
-            <Link href="/Game"><button className={styles.demoBtn}>
+            <Link href="/Game/level"><button className={styles.demoBtn}>
                 <Image src={PlayIcon} alt="Logo"  />
                 {/* <img src="../../../assets/images/pngs/play.png" alt="" /> */}
                 Play Demo
